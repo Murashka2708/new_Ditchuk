@@ -2,6 +2,8 @@
 #define NUMBER 15
 using namespace std;
 
+void OneTriangle(size_t height);
+
 int main()
 {
 	cout << "MARIO.\n";
@@ -33,5 +35,29 @@ int main()
 		while (cin.get() != '\n');
 	}
 
+	if (num == 1)
+	{
+		OneTriangle(height);
+	}
+
 	return 0;
+}
+
+void OneTriangle(size_t height)
+{
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < height; j++)
+		{
+			if (i + j >= height - 1)
+			{
+				cout << "# ";
+			}
+			else
+			{
+				cout << "  ";
+			}
+		}
+		cout << endl;
+	}
 }
