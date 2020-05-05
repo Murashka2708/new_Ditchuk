@@ -38,6 +38,18 @@ int Count1(int& money) {
 	return counter;
 }
 
+void ShowCoins(float money) {
+	int coins = ConvertMoney(money);
+	if (CheckMoney(coins))
+		cout << "25: " << Count25(coins) << endl;
+	if (CheckMoney(coins))
+		cout << "10: " << Count10(coins) << endl;
+	if (CheckMoney(coins))
+		cout << "5: " << Count5(coins) << endl;
+	if (CheckMoney(coins))
+		cout << "1: " << Count1(coins) << endl;
+}
+
 int main()
 {
 	float money;
