@@ -32,6 +32,12 @@ int Count5(int& money) {
 	return counter;
 }
 
+int Count1(int& money) {
+	int counter = money / 1;
+	money = 0;
+	return counter;
+}
+
 int main()
 {
 	float money;
