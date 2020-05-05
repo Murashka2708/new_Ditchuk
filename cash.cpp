@@ -12,6 +12,13 @@ bool CheckMoney(float money) {
 
 int main()
 {
+	float money;
+
+	do {
+		cout << "Use the format 0.00\n";
+		cout << "Enter money: ";
+		cin >> money;
+	} while (!CheckMoney(money));
 
 	return 0;
 }
