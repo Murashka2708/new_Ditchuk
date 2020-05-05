@@ -59,6 +59,6 @@ int main()
 		cout << "Enter money: ";
 		cin >> money;
 	} while (!CheckMoney(money));
-
+	ShowCoins(money);
 	return 0;
 }
