@@ -20,6 +20,12 @@ int Count25(int& money) {
 	return counter;
 }
 
+int Count10(int& money) {
+	int counter = money / 10;
+	money = money % 10;
+	return counter;
+}
+
 int main()
 {
 	float money;
